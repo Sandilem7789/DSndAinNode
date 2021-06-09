@@ -36,8 +36,8 @@ for(let element of arr2){
 
 /*
     forEach: the big difference between forEach and other iteration methods is theat
-             forEach cannot break or skip certain elements in the array. forEach is 
-             more expressive and explicit.
+            forEach cannot break or skip certain elements in the array. forEach is 
+            more expressive and explicit.
 */
 
 console.log("\n");
@@ -47,3 +47,10 @@ arr2.forEach((element, index) => {
 })
 
 console.log("\n");
+console.log("Spread Operator");
+let addFourNums = (a, b, c, d) => {
+    return a + b + c + d;
+}
+
+var numbers = [1, 2, 3, 4, 5];
+console.log(addFourNums(...numbers));
